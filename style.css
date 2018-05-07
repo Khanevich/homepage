@@ -1,0 +1,168 @@
+.container {
+  font-family: sans-serif;
+  color: #666;
+  line-height: 1.7em;
+}
+
+.left-column{
+  width: 35%;
+  max-width: 350px;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #e3e3e3;
+  float: left;
+  padding: 20px;
+}
+
+.intro-info {
+  margin: 15px 0;
+}
+
+.photo{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.column-info>h1{
+  position: relative;
+  color: #000;
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.column-info>h2{
+  position: relative;
+  color: #222;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+
+.column-info>h3{
+  position: relative;
+  color: black;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+.column-info a {
+  color: #666;
+  text-decoration: underline;
+}
+
+
+.right-column{
+  margin-left: 350px;
+  box-sizing: border-box;
+  padding: 40px;
+  height: 830px;
+}
+
+.right-column > h3 {
+  font-size: 1.5em;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: fit-content;
+  font-size: 1em;
+  margin: 20px -10px 0;
+}
+
+.block-limiter {
+  height: 1px;
+  background-color: #aaa;
+}
+
+.features-title {
+  font-size: 1.5em;
+  color: #b2b2b2;
+}
+
+.features-subtitle {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.features-block {
+  width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.features-block>p{
+  margin-top: 15px;
+}
+
+
+.skills{
+  font-size: 1em;
+  padding-top: 20px;
+}
+
+.skills-details{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skills-block {
+  margin-top: 10px;
+}
+
+.skills-progress {
+  height: 4px;
+  background-color: #f8f8f8;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.skills-actual {
+  height: 4px;
+  background-color: #f8dc7b;
+  position: relative;
+  border-radius: 3px;
+}
+
+.skills-actual-percent {
+  line-height: 25px;
+  border-radius: 3px;
+  width: 60px;
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+  position: absolute;
+  right: -30px;
+  top: -27px;
+}
+
+@media screen and (max-width: 1000px) {
+  .right-column {
+    margin-left: 35%;
+  }
+
+  .features-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left-column {
+    float: unset;
+    width: 100%;
+    padding: 25px;
+    max-width: unset;
+  }
+
+  .right-column {
+    margin-left: 0;
+    padding: 25px;
+  }
+}
