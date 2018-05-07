@@ -1,18 +1,17 @@
 .container {
   font-family: sans-serif;
   color: #666;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 .left-column{
-  height: 830px;
   width: 35%;
-  max-width: 300px;
+  max-width: 350px;
   box-sizing: border-box;
   margin: 0;
   background-color: #e3e3e3;
   float: left;
-  padding: 15px;
+  padding: 20px;
 }
 
 .intro-info {
@@ -37,7 +36,7 @@
   position: relative;
   color: #222;
   font-size: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 
@@ -57,11 +56,10 @@
 
 
 .right-column{
-margin-left:300px;
-box-sizing: border-box;
-padding: 40px;
-height: 830px;
-
+  margin-left: 350px;
+  box-sizing: border-box;
+  padding: 40px;
+  height: 830px;
 }
 
 .right-column > h3 {
@@ -86,6 +84,11 @@ height: 830px;
 .features-title {
   font-size: 1.5em;
   color: #b2b2b2;
+}
+
+.features-subtitle {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .features-block {
@@ -138,4 +141,28 @@ height: 830px;
   position: absolute;
   right: -30px;
   top: -27px;
+}
+
+@media screen and (max-width: 1000px) {
+  .right-column {
+    margin-left: 35%;
+  }
+
+  .features-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left-column {
+    float: unset;
+    width: 100%;
+    padding: 25px;
+    max-width: unset;
+  }
+
+  .right-column {
+    margin-left: 0;
+    padding: 25px;
+  }
 }
