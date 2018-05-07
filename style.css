@@ -57,11 +57,10 @@
 
 
 .right-column{
-margin-left:300px;
-box-sizing: border-box;
-padding: 40px;
-height: 830px;
-
+  margin-left: 300px;
+  box-sizing: border-box;
+  padding: 40px;
+  height: 830px;
 }
 
 .right-column > h3 {
@@ -138,4 +137,28 @@ height: 830px;
   position: absolute;
   right: -30px;
   top: -27px;
+}
+
+@media screen and (max-width: 860px) {
+  .right-column {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left-column {
+    float: unset;
+    width: 100%;
+    padding: 25px;
+    max-width: unset;
+  }
+
+  .right-column {
+    margin-left: 0;
+    padding: 25px;
+  }
+
+  .features-block {
+    width: 100%;
+  }
 }
