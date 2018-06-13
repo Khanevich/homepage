@@ -52,40 +52,40 @@
           <div class = 'skills-block'>
             <div class = 'skills-title'>HTML&CSS</div>
             <div class = 'skills-progress'>
-              <div class = 'skills-actual' style="width: 80%">
-                <div class = 'skills-actual-percent'>80%</div>
+              <div class = 'skills-actual' style="width: 0%">
+                <div id ='html' class = 'skills-actual-percent'>0%</div>
               </div>
             </div>
           </div>
           <div class = 'skills-block'>
             <div class = 'skills-title'>JavaScript</div>
             <div class = 'skills-progress'>
-              <div class = 'skills-actual' style="width: 65%">
-                <div class = 'skills-actual-percent'>65%</div>
+              <div class = 'skills-actual' style="width: 0%">
+                <div id ='js' class = 'skills-actual-percent '>0%</div>
               </div>
             </div>
           </div>
           <div class = 'skills-block'>
             <div class = 'skills-title'>SASS</div>
             <div class = 'skills-progress'>
-              <div class = 'skills-actual' style="width: 70%">
-                <div class = 'skills-actual-percent'>70%</div>
+              <div class = 'skills-actual' style="width: 0%">
+                <div id ='sass' class = 'skills-actual-percent sass'>0%</div>
               </div>
             </div>
           </div>
           <div class = 'skills-block'>
             <div class = 'skills-title'>SQL</div>
             <div class = 'skills-progress'>
-              <div class = 'skills-actual' style="width: 50%">
-                <div class = 'skills-actual-percent'>50%</div>
+              <div class = 'skills-actual' style="width: 0%">
+                <div id ='sql' class = 'skills-actual-percent sql'>0%</div>
               </div>
             </div>
           </div>
           <div class = 'skills-block'>
             <div class = 'skills-title'>GIT</div>
             <div class = 'skills-progress'>
-              <div class = 'skills-actual' style="width: 30%">
-                <div class = 'skills-actual-percent'>30%</div>
+              <div class = 'skills-actual' style="width: 0%">
+                <div id ='git' class = 'skills-actual-percent git'>0%</div>
               </div>
             </div>
           </div>
@@ -93,5 +93,26 @@
       </div>
     </div>
   </div>
+
+ <script>
+   var skills = document.getElementsByClassName('skills-actual');
+   var percent = document.getElementsByClassName('skills-actual-percent');
+   var html = document.getElementById('html');
+   var js = document.getElementById('js');
+   var sass = document.getElementById('sass');
+   var sql = document.getElementById('sql');
+   var git = document.getElementById('git');
+
+   document.body.onload = function() {
+  skills[0].style.width = html.innerHTML = '80%';
+  skills[1].style.width = js.innerHTML = '65%';
+  skills[2].style.width = sass.innerHTML = '75%';
+  skills[3].style.width = sql.innerHTML = '30%';
+  skills[4].style.width = git.innerHTML = '60%';
+  }
+
+
+ </script>
+
 </body>
 </html>
