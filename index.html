@@ -20,7 +20,7 @@
         <h2>FRONT-END DEVELOPER</h2>
         <div class="intro-info">
           <p>I'm highly motivated developer with strong front-end development skills. Due largely to my vanilla JavaScript&CSS development experience.</p>
-          <p>I'm very well-trainee in learning frameworks and preprocessors (I'm very familiar with jQuery, React&Redux, VueJS, SASS, SCSS and methodologies like BEM or SMACSS).</p>
+          <p>I'm very well-trainee in learning frameworks and preprocessors (I'm very familiar with jQuery, SASS, SCSS and methodologies like BEM or SMACSS).</p>
           <p>Also, I have experience in SQL and NoSQL db's.</p>
         </div>
         <a href="mailto:staskhanevich@gmail.com">staskhanevich@gmail.com</a>
@@ -42,7 +42,8 @@
         </div>
         <div class="features-block">
           <h3 class="features-subtitle">Additional information</h4>
-          <p>My hobby is hitchhiking! For 3 years at university I hitchhiked to such countries as Russia, Georgia, Belarus, Poland, Czech Republic, Germany, Italy, Hungary, France, Spain and the Netherlands. There I met many interesting people, including programmers, and visited several programming meetings.</p>
+
+          <p>I'm a student of Taras Shevchenko University, at the Faculty of Cybernetics (Applied Mathematics). My hobby is hitchhiking! For 3 years at university I hitchhiked to such countries as Russia, Georgia, Belarus, Poland, Czech Republic, Germany, Italy, Hungary, France, Spain and the Netherlands. There I met many interesting people,including programmers.</p>
         </div>
       </div>
       <div class="block-limiter"></div>
@@ -53,7 +54,7 @@
             <div class = 'skills-title'>HTML&CSS</div>
             <div class = 'skills-progress'>
               <div class = 'skills-actual' style="width: 0%">
-                <div id ='html' class = 'skills-actual-percent'>0%</div>
+                <div id ='html' class = 'skills-actual-percent'>80%</div>
               </div>
             </div>
           </div>
@@ -61,7 +62,7 @@
             <div class = 'skills-title'>JavaScript</div>
             <div class = 'skills-progress'>
               <div class = 'skills-actual' style="width: 0%">
-                <div id ='js' class = 'skills-actual-percent '>0%</div>
+                <div id ='js' class = 'skills-actual-percent'>65%</div>
               </div>
             </div>
           </div>
@@ -69,7 +70,7 @@
             <div class = 'skills-title'>SASS</div>
             <div class = 'skills-progress'>
               <div class = 'skills-actual' style="width: 0%">
-                <div id ='sass' class = 'skills-actual-percent sass'>0%</div>
+                <div id ='sass' class = 'skills-actual-percent'>75%</div>
               </div>
             </div>
           </div>
@@ -77,7 +78,7 @@
             <div class = 'skills-title'>SQL</div>
             <div class = 'skills-progress'>
               <div class = 'skills-actual' style="width: 0%">
-                <div id ='sql' class = 'skills-actual-percent sql'>0%</div>
+                <div id ='sql' class = 'skills-actual-percent'>30%</div>
               </div>
             </div>
           </div>
@@ -85,7 +86,7 @@
             <div class = 'skills-title'>GIT</div>
             <div class = 'skills-progress'>
               <div class = 'skills-actual' style="width: 0%">
-                <div id ='git' class = 'skills-actual-percent git'>0%</div>
+                <div id ='git' class = 'skills-actual-percent'>60%</div>
               </div>
             </div>
           </div>
@@ -97,18 +98,10 @@
  <script>
    var skills = document.getElementsByClassName('skills-actual');
    var percent = document.getElementsByClassName('skills-actual-percent');
-   var html = document.getElementById('html');
-   var js = document.getElementById('js');
-   var sass = document.getElementById('sass');
-   var sql = document.getElementById('sql');
-   var git = document.getElementById('git');
-
    document.body.onload = function() {
-  skills[0].style.width = html.innerHTML = '80%';
-  skills[1].style.width = js.innerHTML = '65%';
-  skills[2].style.width = sass.innerHTML = '75%';
-  skills[3].style.width = sql.innerHTML = '30%';
-  skills[4].style.width = git.innerHTML = '60%';
+   for(var i=0;i<skills.length;i++){
+    skills[i].style.width = percent[i].innerHTML;
+   }
   }
 
 
