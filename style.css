@@ -129,6 +129,7 @@
   background-color: #f8dc7b;
   position: relative;
   border-radius: 3px;
+  transition: all 2.5s 0.3s;
 }
 
 .skills-actual-percent {
@@ -141,6 +142,7 @@
   position: absolute;
   right: -30px;
   top: -27px;
+  transition: all 2.5s;
 }
 
 @media screen and (max-width: 1000px) {
@@ -166,3 +168,4 @@
     padding: 25px;
   }
 }
+
